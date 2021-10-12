@@ -59,30 +59,87 @@
       <h2 class="hide">이벤트 및 광고</h2>
       <div class="swiper slide1">
         <div class="swiper-wrapper">
-          
-            <div class="swiper-slide">
-              <img src="images/visual1.jpg" alt="">
-              <div class="hide">
-                ir기법 대체 텍스트 alt는 끊어 읽기가 안됨
-              </div>
-            </div>          
-            <div class="swiper-slide">
-              <img src="images/visual1.jpg" alt="">
-              <div class="hide">
-                ir기법 대체 텍스트 alt는 끊어 읽기가 안됨
-              </div>
+          <div class="swiper-slide">
+            <img src="images/visual1.jpg" alt="">
+            <div class="hide">
+              ir기법 대체 텍스트 alt는 끊어 읽기가 안됨
             </div>
-            <div class="swiper-slide">
-              <img src="images/visual1.jpg" alt="">
-              <div class="hide">
-                ir기법 대체 텍스트 alt는 끊어 읽기가 안됨
-              </div>
+          </div>          
+          <div class="swiper-slide">
+            <img src="images/visual1.jpg" alt="">
+            <div class="hide">
+              ir기법 대체 텍스트 alt는 끊어 읽기가 안됨
             </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/visual1.jpg" alt="">
+            <div class="hide">
+              ir기법 대체 텍스트 alt는 끊어 읽기가 안됨
+            </div>
+          </div>
         </div>
         <div class="controls">
-          <button class="next"></button>
           <button class="prev"></button>
+          <button class="next"></button>
           <div class="pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="block service">
+      <div>
+        <div class="tit">
+          <h2>금융서비스</h2>
+          <p>은퇴준비가 걱정되시나요? 은퇴준비가 걱정되시나요? 은퇴준비가 걱정되시나요?</p>
+        </div>
+        <div class="banner clear">
+          <div class="left">
+            <div>
+              <h3>시니어플러스<br>우리통장</h3>
+              <p>우대금리, 수수료면제, <br>무료보이스피싱보험, 온천무료이용권, <br>헬스케어서비스등</p>
+              <a href="#">바로가기</a>
+            </div>
+          </div>
+          <div class="right">
+            <div>
+              <h3>시니어플러스<br>우리통장</h3>
+              <p>우대금리, 수수료면제, <br>무료보이스피싱보험, 온천무료이용권, <br>헬스케어서비스등</p>
+              <a href="#">바로가기</a>
+            </div>
+          </div>
+        </div>
+        <div class="btm">
+          <article class="event">
+            <h3>이벤트</h3>
+            <img src="images/event_banner.jpg" alt="">
+            <a href="#" class="btn_more">자세히 보기</a>
+          </article>
+          <article class="recom">
+            <h3>시니어 추천 금융상품</h3>
+            <div class="swiper slide2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card_info">
+                    <div class="card">
+                      <img src="images/card.png" alt="">
+                      <div>
+                        <button>관심추가</button>
+                        <button>신청하기</button>
+                      </div>         
+                    </div>
+                    <div class="info">
+                      <h4>우리국민연금카드</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, doloremque.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="controls">
+                <button class="prev"></button>
+                <button class="next"></button>
+              </div>
+            </div>
+            <a href="#" class="btn_more">자세히 보기</a>
+          </article>
         </div>
       </div>
     </section>
@@ -91,7 +148,7 @@
   <script>
     var swiper = new Swiper(".slide1", {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 0,
       loop: true,
       pagination: {
         el: ".pagination",
@@ -102,6 +159,15 @@
         prevEl: ".slide1 .prev",
       },
     });
+    var swiper2 = new Swiper(".slide2", {
+      slidesPerView: 1,
+      loop: true,
+      navigation: {
+        nextEl: ".slide2 .next",
+        prevEl: ".slide2 .prev",
+      },
+    });
+    
   </script>
 </body>
 </html>
