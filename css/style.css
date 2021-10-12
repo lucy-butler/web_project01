@@ -1,3 +1,13 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+header .header {
+  background: #fff;
+}
 header .top {
   margin: 0 auto;
   width: 1200px;
@@ -46,6 +56,7 @@ header .control li button {
   border: 1px solid #dfdfdf;
   border-radius: 36px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 header .sns {
   position: relative;
@@ -122,7 +133,9 @@ header .btm .spot button {
   font-size: 26px;
   color: #0066b3;
 }
-
+main {
+  margin-top: 160px;
+}
 .visual {
   position: relative;
   overflow: hidden;
@@ -188,7 +201,9 @@ header .btm .spot button {
   color: #666;
   line-height: 1;
 }
-
+.service {
+  padding: 0 0 147px;
+}
 .service .banner > div {
   width: 580px;
   color: #fff;
@@ -348,7 +363,6 @@ header .btm .spot button {
   content: '\e971';
 }
 
-
 .btn_more {
   position: absolute;
   right: 0;
@@ -365,4 +379,277 @@ header .btm .spot button {
   content: '\e93f';
   font-family: xeicon;
   margin: 0 0 0 8px;
+}
+
+.fav_info {
+  padding: 0 0 100px;
+  background: #f9f9f9;
+}
+.fav_info .left {
+  float: left;
+  width: 384px;
+}
+.fav_info .left > a {
+  display: block;
+  height: 65px;
+  background: #3f69b8;
+  border-radius: 5px;
+  font-size: 19px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 65px;
+  text-align: center;
+}
+.fav_info .left > a span {
+  color: #ffc820;
+}
+.fav_info .left .thoumb {
+  padding: 30px 0 0 ;
+}
+.fav_info .left .thoumb img {
+  width: 100%;
+}
+.fav_info .left .thoumb p {
+  position: relative;
+  padding: 33px 0 22px;
+  margin: 0 0 20px;
+  font-size: 15px;
+  color: #288bcf;
+  line-height: 1;
+}
+.fav_info .left .thoumb span {
+  font-size: 20px;
+}
+.fav_info .left .thoumb p:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 36px;
+  height: 1px;
+  background: #288bcf;
+}
+.fav_info .right {
+  float: right;
+  width: 729px;
+}
+.tab_type1 {
+  display: flex;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+.tab_type1 li {
+  flex: 1;
+}
+.tab_type1 li a {
+  display: block;
+  background: #fff;
+  font-size: 17px;
+  color: #333;
+  text-align: center;
+  line-height: 62px;
+}
+.tab_type1 li a:hover {
+  background: #f5f5f5;
+  color: #288bcc;
+}
+.tab_type1 li:first-child a {
+  border-radius: 5px 0 0 5px;
+}
+.tab_type1 li:last-child a {
+  border-radius: 0 5px 5px 0;
+}
+.tab_type1 li ~ li {
+  border-left: 1px solid #e4e4e4;
+}
+.tab_type1 li a:before {
+  font-family: xeicon;
+  color: #288bcc;
+  font-size: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.tab_type1 li:nth-child(1) a:before {
+  content: "\eb50";
+}
+.tab_type1 li:nth-child(2) a:before {
+  content: "\eb23";
+}
+.tab_type1 li:nth-child(3) a:before {
+  content: "\eb3c";
+}
+.tab_type1 li:nth-child(4) a:before {
+  content: "\eb40";
+}
+.tab_type1 li:nth-child(5) a:before {
+  content: "\ea31";
+}
+.info_list {
+  margin: 30px 0 0;
+  border-top: 2px solid #288bcc;
+}
+.info_list li {
+  border-bottom: 1px solid #eaeaea;
+  background: #fff;
+}
+.info_list li a {
+  display: block;
+  position: relative;
+  line-height: 82px;
+  font-size: 19px;
+  color: #333;
+}
+.info_list li a:after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: 30px;
+  top: 50%;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  background: url(../images/icon_more.png) no-repeat center;
+  transform: translateY(-50%);
+}
+.info_list li a strong {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  width: 130px;
+  font-size: 15px;
+  color: #288bcc;
+}
+.trip {
+  padding: 0 0 100px;
+  background: #8ebbda;
+}
+.trip .tit h2, .trip .tit p {
+  color: #fff;
+}
+.trip .trip_list {
+  display: flex;
+  justify-content: space-between;
+}
+.trip .trip_list li {
+  position: relative;
+  width: 384px;
+  height: 439px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.trip .trip_list li .thoumb {
+  width: 100%;
+  height: 212px;
+  border-radius: 5px 5px 0 0;
+}
+.trip .trip_list li .mark {
+  position: absolute;
+  right: -10px;
+  top: -24px;
+}
+.trip .trip_list li strong {
+  display: block;
+  padding: 37px 0 20px;
+  font-size: 24px;
+  color: #333;
+  line-height: 1;
+}
+.trip .trip_list li p {
+  padding: 0 0 20px;
+  font-size: 18px;
+  color: #666;
+  line-height: 28px;
+}
+.trip .trip_list li a {
+  display: inline-block;
+  width: 148px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+}
+.trip .trip_list li.color1 strong span {
+  color: #ed2626;
+}
+.trip .trip_list li.color1 a {
+  background: #ed2626;
+}
+.trip .trip_list li.color2 strong span {
+  color: #122e80;
+}
+.trip .trip_list li.color2 a {
+  background: #122e80;
+}
+.trip .trip_list li.color3 strong span {
+  color: #288bcc;
+}
+.trip .trip_list li.color3 a {
+  background: #288bcc;
+}
+footer {
+  background: #f5f5f5;
+}
+footer.block > div {
+  padding: 60px 0;
+}
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 29px;
+  border-bottom: 1px solid #e4e4e4;
+}
+footer .top ul {
+  display: inline-flex;
+  padding: 0 0 0 38px;
+}
+footer .top li {
+  position: relative;
+  padding: 0 17px;
+}
+footer .top li ~ li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 13px;
+  background: #d9d9d9;
+  transform: translateY(-50%);
+}
+footer .top a {
+  display: block;
+  line-height: 44px;
+  font-size: 15px;
+  color: #222;
+}
+footer .top select {
+  padding: 0 0 0 24px;
+  width: 228px;
+  height: 44px;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+}
+footer .btm {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 0;
+  font-size: 14px;
+  color: #a8a8a8;
+  line-height: 46px;
+}
+footer .btm ul {
+  display: flex;
+}
+footer .btm li {
+  padding: 0 0 0 12px;
+}
+footer .btm li a {
+  display: block;
+  width: 46px;
+  height: 46px;
+}
+footer .btm li a img {
+  width: 100%;
 }
