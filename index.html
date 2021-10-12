@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리은행 시니어플러스</title>
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문바로가기</a>
+  </div>
+  <header>
+    <div class="top clear">
+      <h1><a href="#"><img src="images/original_logo.png" alt="우리은행"></a><a href="#"><img src="images/logo.png" alt="시니어플러스"></a></h1>
+      <div>
+        <div class="control">
+          <h2>화면크기조정</h2>
+          <ul>
+            <li><button class="xi-plus"><span class="hide">크기확대</span></button></li>
+            <li><button class="xi-minus"><span class="hide">크기축소</span></button></li>
+            <li><button>원본보기</button></li>
+          </ul>
+        </div>
+        <h2 class="hide">SNS</h2>
+        <ul class="sns">
+          <li><a href="#"><img src="images/sns_1.png" alt="네이버카페"></a></li>
+          <li><a href="#"><img src="images/sns_2.png" alt="유튜브"></a></li>
+          <li><a href="#"><img src="images/sns_3.png" alt="페이스북"></a></li>
+          <li><a href="#"><img src="images/sns_4.png" alt="인스타그램"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="btm clear">
+      <div>
+        <nav class="lnb">
+          <ul>
+            <li><a href="#">금융서비스</a></li>
+            <li><a href="#">관심정보</a></li>
+            <li><a href="#">교육/세미나</a></li>
+            <li><a href="#">일자리정보</a></li>
+          </ul>
+        </nav>
+        <div class="spot">
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+          <button class="xi-search"><span class="hide">검색</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="visual">
+      <h2 class="hide">이벤트 및 광고</h2>
+      <div class="swiper slide1">
+        <div class="swiper-wrapper">
+          
+            <div class="swiper-slide">
+              <img src="images/visual1.jpg" alt="">
+              <div class="hide">
+                ir기법 대체 텍스트 alt는 끊어 읽기가 안됨
+              </div>
+            </div>          
+            <div class="swiper-slide">
+              <img src="images/visual1.jpg" alt="">
+              <div class="hide">
+                ir기법 대체 텍스트 alt는 끊어 읽기가 안됨
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/visual1.jpg" alt="">
+              <div class="hide">
+                ir기법 대체 텍스트 alt는 끊어 읽기가 안됨
+              </div>
+            </div>
+        </div>
+        <div class="controls">
+          <button class="next"></button>
+          <button class="prev"></button>
+          <div class="pagination"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper(".slide1", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".slide1 .next",
+        prevEl: ".slide1 .prev",
+      },
+    });
+  </script>
+</body>
+</html>

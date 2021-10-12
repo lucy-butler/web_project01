@@ -1,0 +1,168 @@
+header .top {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 0 26px;
+}
+header .top h1 {
+  float: left;
+  padding: 33px 0 0;
+}
+header .top h1 a:first-child {
+  margin-right: 28px;
+}
+header .top > div {
+  float: right;
+}
+header .control {
+  float: left;
+  padding: 31px 24px 0 0;
+}
+header .control h2 {
+  float: left;
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+  line-height: 36px;
+}
+header .control ul {
+  float: left;
+  padding: 0 0 0 9px;
+}
+header .control li {
+  float: left;
+  padding: 0 0 0 4px;
+}
+header .control li button[class] {
+  padding: 0;
+}
+header .control li button {
+  padding: 0 16px;
+  min-width: 36px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #3190ce;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 36px;
+  box-sizing: border-box;
+}
+header .sns {
+  position: relative;
+  float: left;
+  padding: 27px 0 0;
+}
+header .sns:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 1px;
+  height: 30px;
+  background: #e3e3e3;
+}
+header .sns li {
+  float: left;
+  padding: 0 0 0 12px;
+}
+header .sns li img {
+  width: 46px;
+}
+header .btm {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+header .btm > div {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .btm .lnb {
+  float: left;
+}
+header .btm .lnb li {
+  float: left;
+}
+header .btm .lnb a {
+  display: block;
+  padding: 0 40px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  line-height: 59px;
+}
+header .btm .spot * {
+  vertical-align: middle;
+}
+header .btm .spot{
+  float: right;
+  font-size: 0;
+}
+header .btm .spot a {
+  position: relative;
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 59px;
+  font-size: 15px;
+  color: #666;
+}
+header .btm .spot a ~ a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 10px;
+  background: #e3e3e3;
+  transform: translateY(-50%);
+}
+header .btm .spot button {
+  width: 59px;
+  height: 59px;
+  background: none;
+  font-size: 26px;
+  color: #0066b3;
+}
+
+.visual {
+  position: relative;
+}
+.visual .slide1 img {
+  width: 100%;
+}
+.visual .controls {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translateX(-50%);
+  padding: 0 32px;
+  z-index: 1;
+}
+.visual .controls > button {
+  position: absolute;
+  top: 0;
+  width: 15px;
+  height: 25px;
+  cursor: pointer;
+}
+.visual .controls > button.next {
+  right: 0;
+  background: url(../images/sBtn_next3.png);
+  
+}
+.visual .controls > button.prev {
+  left: 0;
+  background: url(../images/sBtn_prev3.png);
+}
+.visual .controls .pagination {
+  line-height: 25px;
+}
+.visual .controls .pagination span {
+  margin: 0 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  transition: all .1s;
+}
+.visual .controls .pagination .swiper-pagination-bullet-active {
+  width: 24px;
+}
