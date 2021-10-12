@@ -125,6 +125,7 @@ header .btm .spot button {
 
 .visual {
   position: relative;
+  overflow: hidden;
 }
 .visual .slide1 img {
   width: 100%;
@@ -165,4 +166,203 @@ header .btm .spot button {
 }
 .visual .controls .pagination .swiper-pagination-bullet-active {
   width: 24px;
+}
+
+.block > div {
+  margin: 0 auto;
+  padding: 100px 0 0;
+  width: 1200px;
+}
+.block .tit {
+  text-align: center;
+}
+.block .tit h2 {
+  padding: 0 0 28px;
+  font-size: 38px;
+  color: #333;
+  line-height: 1;
+}
+.block .tit p {
+  padding: 0 0 40px;
+  font-size: 21px;
+  color: #666;
+  line-height: 1;
+}
+
+.service .banner > div {
+  width: 580px;
+  color: #fff;
+}
+.service .banner div div {
+  width: 290px;
+  height: 280px;
+  padding: 37px 0 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.service .banner .left {
+  float: left;
+  background: url(../images/bg_banner01.jpg) no-repeat left top;
+}
+.service .banner .left div {
+  float: right;
+  background: linear-gradient(to right, #3194d5, #4fb2f6);
+}
+.service .banner .right {
+  float: right;
+  background: url(../images/bg_banner02.jpg) no-repeat right top;
+}
+.service .banner .right div {
+  background: linear-gradient(to right, #334da4, #3c62b3);
+}
+.service .banner h3 {
+  font-size: 24px;
+  line-height: 31px;
+}
+.service .banner p {
+  padding: 12px 0 15px;
+  font-size: 13px;
+  line-height: 24px;
+}
+.service .banner a {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  line-height: 40px;
+  background: #064ca2;
+  border-radius: 7px;
+  color: #fff;
+}
+.service .btm > article {
+  position: relative;
+  margin: 38px 0 0;
+  width: 580px;
+}
+.service .btm h3 {
+  padding: 0 0 28px;
+  font-size: 26px;
+  color: #333;
+}
+.service .event {
+  float: left;
+}
+.service .event img {
+  width: 100%;
+}
+.service .recom {
+  float: right;
+  overflow: hidden;
+}
+.service .card_info > div {
+  float: left;
+}
+.service .card_info .card {
+  position: relative;
+  font-size: 0;
+}
+.service .card_info .card div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, .8);
+}
+.service .card_info .card div:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #bfc0c2;
+}
+.service .card_info .card button {
+  width: 50%;
+  height: 45px;
+  background: none;
+  font-size: 15px;
+  color: #666;
+  cursor: pointer;  
+}
+.service .card_info .card button:before {
+  margin-right: 3px;
+  font-family: xeicon;
+  line-height: 45px;
+  vertical-align: middle;
+  transform: translate(-4px, 3px);
+}
+.service .card_info .info {
+  padding: 0 0 0 35px;
+  width: 295px;
+}
+.service .card_info .info h4 {
+  font-size: 26px;
+  color: #333;
+  line-height: 1;
+}
+.service .card_info .info p {
+  position: relative;
+  padding: 36px 0 0;
+  font-size: 18px;
+  color: #666;
+  letter-spacing: -0.5px;
+}
+.service .card_info .info p:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 21px;
+  width: 36px;
+  height: 2px;
+  background: #288bcc;
+}
+.service .slide2 {
+  height: 224px;
+  border-top: 2px solid #333;
+  padding: 20px 0 0;
+  box-sizing: border-box;
+}
+.service .slide2 .controls {
+  position: absolute;
+  left: 256px;
+  bottom: 0;
+  z-index: 10;
+}
+.service .slide2 .controls button {
+  width: 75px;
+  height: 35px;
+  cursor: pointer;
+}
+.service .slide2 .controls button ~ button {
+  border-left: 1px solid #ddd;
+}
+.service .slide2 .controls button.prev {
+  background: url(../images/sArrow_prev.png) no-repeat center;
+}
+.service .slide2 .controls button.next {
+  background: url(../images/sArrow_next.png) no-repeat center;
+}
+.service .card_info .card button:first-child:before {
+  content: '\ea10';
+}
+.service .card_info .card button:last-child:before {
+  content: '\e971';
+}
+
+
+.btn_more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 136px;
+  line-height: 38px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #8a8a8a;
+  text-align: center;
+}
+.btn_more:after {
+  content: '\e93f';
+  font-family: xeicon;
+  margin: 0 0 0 8px;
 }
