@@ -96,9 +96,8 @@ header .btm .lnb li {
 header .btm .lnb a {
   display: block;
   padding: 0 40px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
+  font-size: 18px;
+  color: #666;
   line-height: 59px;
 }
 header .btm .spot * {
@@ -154,8 +153,8 @@ main {
 .visual .controls > button {
   position: absolute;
   top: 0;
-  width: 15px;
-  height: 25px;
+  width: 14px;
+  height: 24px;
   cursor: pointer;
 }
 .visual .controls > button.next {
@@ -175,10 +174,12 @@ main {
   width: 14px;
   height: 14px;
   border-radius: 14px;
+  background: #8ebbda;
   transition: all .1s;
 }
 .visual .controls .pagination .swiper-pagination-bullet-active {
   width: 24px;
+  background: #8ebbda;
 }
 
 .block > div {
